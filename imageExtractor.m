@@ -1,8 +1,8 @@
-function imageExtractor(dataset)
+function imageExtractor(dataset, path)
 	if (strcmpi(dataset,'ADNI') == 1)
-		fprintf(2,'Searching for all gif images in /home/fabio/IASI-CNR/Datasets/ADNI/**/*.nii...');
+		fprintf(2,'Searching for all gif images in %s/**/*.nii...', path);
 		
-		files = rdir('/home/fabio/IASI-CNR/Datasets/ADNI/**/*.nii');
+		files = rdir(strcat(path,'/**/*.nii'));
 		
 		fprintf(2,'done!\n');
 		
@@ -56,9 +56,9 @@ function imageExtractor(dataset)
 		
 		close all;
 	else if (strcmpi(dataset,'OASIS') == 1)
-		fprintf(2,'Searching for all img images in /home/fabio/IASI-CNR/Datasets/OASIS/**/mpr-1*.img...');
+		fprintf(2,'Searching for all img images in %s/**/mpr-1*.img...', path);
 		
-		files = rdir('/home/fabio/IASI-CNR/Datasets/OASIS/**/mpr-1*.img');
+		files = rdir(strcat(path,'/**/mpr-1*.img'));
 		
 		fprintf(2,'done!\n');
 		
