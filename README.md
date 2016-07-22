@@ -2,7 +2,7 @@ ImageExtractor
 =========
 
 This software package extracts the MRI patient brain scans from the data sets ADNI or OASIS.
-The code has been developed by using Matlab 2012b but the code should be compatible also with
+The code has been developed by using Matlab R2012b but the code should be compatible also with
 newer Matlab versions.
 
 # Usage
